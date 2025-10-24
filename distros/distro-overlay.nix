@@ -143,7 +143,7 @@ let
 
     plotjuggler = (rosSuper.plotjuggler.override {
       # plotjuggler is not yet compatible with newer versions
-      protobuf = self.protobuf_23;
+      protobuf = self.protobuf_21;
     }).overrideAttrs ({
       nativeBuildInputs ? [], ...
     }: {
